@@ -10,16 +10,21 @@ const Home: NextPage = () => {
   let yb = height/2 + height/8;
 
   let circles = [];
-  for (var i = 0; i < 50 * (Math.max(height, width) / 250) ; i++) {
+  for (var i = 0; i < 100 * (Math.max(height, width) / 250) ; i++) {
       let t = Math.random() * 70 + 20;
+
       let r = Math.random() * height; 
       while (r > yt && r < yb) {
         r = Math.random() * height;
       }
       let l = Math.random() * width;
-      let interp = t/3 + ";" + t + ";" + t/3;
-        circles.push(<circle cx={l} cy={r} r={t} stroke="#000" fill="none">
-      </circle>);
+      // console.log("" + (r+r/10) +","+ (l-l/10) + " " + (r-r/10) +","+ (l+l/10))
+
+        circles.push(
+          // <polygon points="0,100 50,25 50,75 100,0" transform={"translate("+l+","+r+");"} />
+          <polygon points={"" + (r-r/10) +","+ (l-l/10) + " " + (r-r/10) +","+ (l+l/10) + " 100,100"} fill="#ff0000" stroke="#fff"/>
+          // </g>
+      );
     }
 
   return (
@@ -33,7 +38,6 @@ const Home: NextPage = () => {
         <div className="behind">
           <svg width="100%" height="100%">
             {circles}
-          
           </svg>
         </div>
         <div className="min-w-[100wh] h-[100vh] grid grid-cols-2">
