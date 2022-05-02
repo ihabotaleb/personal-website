@@ -40,6 +40,11 @@ a {
   font-weight: 100;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #7b1d06;
+}
+
 .behind {
   position: fixed;
   top: 0;
