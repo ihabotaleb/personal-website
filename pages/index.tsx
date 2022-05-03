@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
 
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
                 <h1 className="title flex-1 boxcent  h-[100%] w-[100%] mr-4">Ibrahim Abotaleb</h1>
               </div>
             <div className="col-start-4 col-end-6 row-start-3 row-end-5 grid boxcent grid-row-4 h-[100%] w-[100%] ml-4 items">
-              <a>About</a>
+              <Link href="about">About</Link>
               <a>Resume</a>
               <a>Projects</a>
               <a>Design Portfolio</a>
