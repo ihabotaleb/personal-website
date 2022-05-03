@@ -1,32 +1,35 @@
-import type { NextPage } from "next";
+import type { NextPage, NextComponentType } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useWindowSize } from 'usehooks-ts'
+import { useEffect, useRef, useState } from "react"
 
 const Home: NextPage = () => {
+  const titleRef = useRef<HTMLHeadingElement|null>(null);
+  const pagesRef = useRef(null);
+  const svgRef = useRef(null);
 
-  const {width, height} = useWindowSize();
-  let yt = height/2 - height/8;
-  let yb = height/2 + height/8;
+  let titleH = 0;
+  let titleW = 0;
 
-  let circles = [];
-  for (var i = 0; i < 100 * (Math.max(height, width) / 250) ; i++) {
-      let t = Math.random() * 70 + 20;
+  const [titleDimens, setTitleDimens] = useState<null | [number, number]>(null);
 
-      let r = Math.random() * height; 
-      while (r > yt && r < yb) {
-        r = Math.random() * height;
-      }
-      let l = Math.random() * width;
-      // console.log("" + (r+r/10) +","+ (l-l/10) + " " + (r-r/10) +","+ (l+l/10))
-
-        circles.push(
-          // <polygon points="0,100 50,25 50,75 100,0" transform={"translate("+l+","+r+");"} />
-          <polygon points={"" + (r-r/10) +","+ (l-l/10) + " " + (r-r/10) +","+ (l+l/10) + " 100,100"} fill="#ff0000" stroke="#fff"/>
-          // </g>
-      );
+  useEffect(() => {
+    if (titleRef.current) {
+      console.log(titleRef);
+      const titleW = titleRef.current.offsetWidth;
+      const titleH = titleRef.current.offsetHeight;
+      setTitleDimens([titleW, titleH]);
     }
+  },[titleRef.current]);
 
+  let ellipsex = 0;
+  let ellipsey = 0;
+  if (titleDimens) {
+   ellipsex = titleDimens[0];
+   ellipsey = titleDimens[1];
+  }
+  
   return (
     <div>
       <Head>
@@ -35,16 +38,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="behind">
-          <svg width="100%" height="100%">
-            {circles}
-          </svg>
-        </div>
+
         <div className="min-w-[100wh] h-[100vh] grid grid-cols-2">
-          <div className="flex-1 mr-2">
+          <div className="flex-1 mr-2 boxcent h-[100%] w-[100%]" ref={titleRef}>
+            <svg className="behind" ref={svgRef} width="50%" height={"" + (100 / 6) + "%"}>
+            </svg>
             <h1 className="title boxcent h-[100%] w-[100%]">Ibrahim Abotaleb</h1>
           </div>
-          <div className="grid boxcent grid-row-4 ml-3 mt-[25vh] mb-[25vh] items">
+          <div className="grid boxcent grid-row-4 ml-3 mt-[25vh] mb-[25vh] items" ref={pagesRef}>
             <a>About</a>
             <a>Resume</a>
             <a>Projects</a>
