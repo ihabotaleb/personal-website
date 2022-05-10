@@ -6,9 +6,22 @@ import { useWindowSize } from "usehooks-ts";
 const Home: NextPage = () => {
 
   const { width, height } = useWindowSize();
-  
-  // TODO: Add responsive offsets
-  let svgXStartOffset = (height > width) ? 47.5 : 48.5;
+
+
+  let svgXStartOffset = 50;
+
+  let polys = [];
+  for (let i = 0; i < 300 ; i++) {
+
+    let sign = (Math.random() > 0.5) ? 1:-1;
+    let r = Math.random() * width * 1.5 * sign; 
+
+    let l = Math.random() * height * 0.35;
+
+      polys.push(
+        <polygon points={"" + (r-r/10) +","+ (l-l/10) + " " + (r-r/10) +","+ (l+l/10) + " " + 1*sign*(-1) + ",0"} fill={"rgb("+parseInt(Math.random()*200_55)+","+parseInt(Math.random()*200+55)+","+parseInt(Math.random()*200+55)+")"} stroke="None"/>
+    );
+  }
 
   return (
     <div>
@@ -20,10 +33,10 @@ const Home: NextPage = () => {
       <main>
         <div className="behind grid grid-cols-6 grid-rows-6 w-[100vw] h-[100vh]">
           <div className="col-start-1 col-end-7 row-start-1 row-end-7">
-            <svg width="100%" height="100%">
-              <svg x={"" + svgXStartOffset + "%"} y="50%" overflow="visible">
-                <g transform="rotate(12)">
-                  <ellipse cx={0} cy={0} rx={170} ry={100} fill="none" stroke="black" />
+            <svg width="100%" height="100%" className="opacity-[0.7]" fill='none'>
+              <svg x={"" + svgXStartOffset + "%"} y="60%" overflow="visible">
+                <g>
+                  {polys}
                 </g>
               </svg>
             </svg>

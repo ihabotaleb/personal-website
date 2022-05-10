@@ -61,7 +61,7 @@ a:hover {
   z-index: 0;
 }
 
-moveBox {
+.moveBox {
   position: absolute;
   cursor: move;
   margin: auto;
