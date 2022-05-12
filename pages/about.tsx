@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { useWindowSize } from "usehooks-ts";
+import Header from "./components/header";
 import NavBar from "./components/navbar";
 
 const About: NextPage = () => {
@@ -18,17 +19,10 @@ const About: NextPage = () => {
         <meta name="theme-color" content="#fff" />
       </Head>
       <main>
-        <div className="m-7">
+        <div className="subPage">
+          <Header />
           <div className="flex flex-col">
-            <h1 className="pageTitle">About</h1>
-            <NavBar />
-          </div>
-          <Link href="/">
-            <a className="times">Back to Home</a>
-          </Link>
-          <div className="w-[100vw] h-[100vh] flex flex-col ">
-            <p>One</p>
-            <p>Two</p>
+            <p className="italic text-center">CONTENT TO BE PUT HERE</p>
           </div>
         </div>
       </main>

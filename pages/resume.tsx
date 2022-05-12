@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import NavBar from "./components/navbar";
+import Header from "./components/header";
 
 const Resume: NextPage = () => {
   return (
@@ -17,14 +16,15 @@ const Resume: NextPage = () => {
       <main>
         <div className="subPage">
 					<div className="flex flex-col">
-          	<h1 className="pageTitle">Resume</h1>
-            <NavBar />
-          </div>
-          <embed
-            className="w-[65%] min-w-[265px] max-w-[600px] h-[75vh] pdfViewer"
-            src="/ibrahimAbotaleb_Resume.pdf"
-            type="application/pdf"
-          />
+						<Header />
+						<div className="flex self-center w-[87vw] h-[80vh]">
+							<embed
+								className="pdfViewer"
+								src="/ibrahimAbotaleb_Resume.pdf"
+								type="application/pdf"
+							/>
+						</div>
+					</div>
         </div>
       </main>
     </div>

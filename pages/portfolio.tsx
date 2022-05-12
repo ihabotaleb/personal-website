@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import { useWindowSize } from "usehooks-ts";
-import NavBar from "./components/navbar";
+import Header from "./components/header";
 
 const Portfolio: NextPage = () => {
   const { width, height } = useWindowSize();
@@ -19,14 +18,8 @@ const Portfolio: NextPage = () => {
       </Head>
       <main>
         <div className="subPage">
-          <div className="flex flex-col">
-            <h1 className="pageTitle">Portfolio</h1>
-            <NavBar />
-          </div>
-          <div className="w-[100vw] h-[100vh] flex flex-col ">
-            <p>One</p>
-            <p>Two</p>
-          </div>
+          <Header />
+          <p className="italic text-center">CONTENT TO BE PUT HERE</p>
         </div>
       </main>
     </div>
