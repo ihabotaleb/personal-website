@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Thin-13.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-ThinItalic-14.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 200;
+}
 
 html,
 body {
@@ -8,20 +19,25 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  overflow: hidden
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .title {
-  font-family: 'Helvetica Neue';
+}
+
+.homePage {
+  margin:  0;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-weight: 200;
   color: #000;
   font-size: 150%;
@@ -37,16 +53,15 @@ body {
 }
 
 .items {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: italic;
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
 }
 
-a:hover {
+.items:hover {
   text-decoration: underline;
   color: #7b1d06;
 }
-
 
 .behind {
   position: fixed;
@@ -55,8 +70,8 @@ a:hover {
 
 .holder {
   position: absolute;
-  width:  33%;
-  height:  33%;
+  width: 33%;
+  height: 33%;
   z-index: 0;
 }
 
@@ -67,14 +82,14 @@ a:hover {
 }
 
 .pageTitle {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-weight: 100;
   color: #000;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 .times {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: italic;
 }
 
@@ -90,4 +105,36 @@ a:hover {
 
 .pdfViewer {
   margin: 0 auto;
+}
+
+.navItem {
+  padding: max(0.25em,1%) max(1em, 2%);
+  margin: 0.1em;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.navItem:hover {
+  text-decoration: underline;
+}
+
+.navBar {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-left: auto;
+    /* margin-left: auto; */
+  }
+}
+
+.subPage {
+  margin: 5px 15px 15px 25px;
 }

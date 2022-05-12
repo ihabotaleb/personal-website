@@ -4,13 +4,13 @@ import Link from "next/link";
 import { useWindowSize } from "usehooks-ts";
 import NavBar from "./components/navbar";
 
-const About: NextPage = () => {
+const Portfolio: NextPage = () => {
   const { width, height } = useWindowSize();
 
   return (
     <div>
       <Head>
-        <title>Ibrahim Abotale - About</title>
+        <title>Ibrahim Abotale - Portfolio</title>
         <meta
           name="description"
           content="Personal website for Ibrahim Abotaleb"
@@ -18,14 +18,11 @@ const About: NextPage = () => {
         <meta name="theme-color" content="#fff" />
       </Head>
       <main>
-        <div className="m-7">
+        <div className="subPage">
           <div className="flex flex-col">
-            <h1 className="pageTitle">About</h1>
+            <h1 className="pageTitle">Portfolio</h1>
             <NavBar />
           </div>
-          <Link href="/">
-            <a className="times">Back to Home</a>
-          </Link>
           <div className="w-[100vw] h-[100vh] flex flex-col ">
             <p>One</p>
             <p>Two</p>
@@ -36,4 +33,5 @@ const About: NextPage = () => {
   );
 };
 
-export default About;
+export default Portfolio;
+
