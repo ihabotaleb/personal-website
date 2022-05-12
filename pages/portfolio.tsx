@@ -1,32 +1,20 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useWindowSize } from "usehooks-ts";
 import Header from "./components/header";
-import Gallery from "react-grid-gallery";
+import PhotoAlbum from "react-photo-gallery";
 
 const Portfolio: NextPage = () => {
-  const { width, height } = useWindowSize();
   
-  const IMAGES = [{
-      src: "imgs/sq1.png",
-      thumbnail: "imgs/sq1.png",
-      thumbnailWidth: 300,
-      thumbnailHeigh: 400,
-      caption: "Wrektacular pour"
-  }, {src: "imgs/sq1.png",
-  thumbnail: "imgs/sq1.png",
-  thumbnailWidth: 300,
-  thumbnailHeigh: 400,
-  caption: "Wrektacular pour"},{src: "imgs/sq1.png",
-  thumbnail: "imgs/sq1.png",
-  thumbnailWidth: 300,
-  thumbnailHeigh: 400,
-  caption: "Wrektacular pour"},{src: "imgs/sq1.png",
-  thumbnail: "imgs/sq1.png",
-  thumbnailWidth: 300,
-  thumbnailHeigh: 400,
-  caption: "Wrektacular pour"}];
-
+  const IMAGES=[{ 
+    src:'imgs/rw1.png',
+    width:876,
+    height:322
+  },{ 
+    src:'imgs/sq1.png',
+    width:1000,
+    height:1017
+  }];
+  
   return (
     <div>
       <Head>
@@ -41,7 +29,7 @@ const Portfolio: NextPage = () => {
         <div className="subPage">
           <Header />
           <p className="italic text-center">PORTFOLIO CONTENT INTRO TO BE PUT HERE</p>
-            <Gallery images={IMAGES} />
+            <PhotoAlbum photos={IMAGES}/>
         </div>
       </main>
     </div>
