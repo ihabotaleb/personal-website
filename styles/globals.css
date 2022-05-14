@@ -123,13 +123,17 @@ a {
   margin: 0.1em;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  background-color: #fff;
   text-transform: capitalize;
-  /* border-radius: 9999px; */
+  background-size: 0% 100%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 450ms ease-in-out;
 }
 
 .navItem:hover {
   text-decoration: underline;
+  background-size: 150% 200%; 
+  background-position: 0 100%; 
 }
 
 .navBar {
