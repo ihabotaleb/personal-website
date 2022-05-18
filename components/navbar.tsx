@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+//  TODO: Add Active Param
 const NavBar = () => {
     return(            
     <div className="navBar">
@@ -9,7 +10,7 @@ const NavBar = () => {
         <Link href="/resume">
         <a className="navItem bg-white transition-colors duration-200 hover:bg-gradient-to-tl from-[#97c1fe] hover:bg-[#fff]">resume</a>
         </Link>
-        <Link href="/projects">
+        <Link href="http://github.com/ihabotaleb">
         <a className="navItem bg-white transition-colors duration-200 hover:bg-gradient-to-tl from-[#ff7c7e] hover:bg-[#fff]">projects</a>
         </Link>
         <Link href="/portfolio">
