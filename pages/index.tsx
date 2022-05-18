@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
 import { useWindowSize } from "usehooks-ts";
 import React from "react";
 
@@ -53,7 +52,8 @@ const Home: NextPage = () => {
           content="Personal website for Ibrahim Abotaleb"
         />
         <meta name="theme-color" content="#fff" />
-      </Head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />      </Head>
       <main className="homePage">
         <div className="behind grid grid-cols-6 grid-rows-6 w-[100vw] h-[100vh]">
           <div className="col-start-1 col-end-7 row-start-1 row-end-7">

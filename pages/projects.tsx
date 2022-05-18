@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import { useWindowSize } from "usehooks-ts";
-import Header from "./components/header";
+import Header from "../components/header";
 
 const Projects: NextPage = () => {
   const { width, height } = useWindowSize();
