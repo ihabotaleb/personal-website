@@ -22,7 +22,7 @@ const About: NextPage = () => {
           <Header />
           <div className="flex flex-col">
             {/* <p className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%]">{"I'm a developer with a passion in making tools that help people create."}</p> */}
-            <p className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%]">I'm a developer with a passion in making tools that help people create.</p>
+            <p className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%]">{"I'm a developer with a passion in making tools that help people create."}</p>
           </div>
         </div>
       </main>
