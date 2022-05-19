@@ -53,7 +53,12 @@ const Home: NextPage = () => {
         />
         <meta name="theme-color" content="#fff" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />      </Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/apple-touch-icon-144x144.png"
+        />{" "}
+      </Head>
       <main className="homePage">
         <div className="behind grid grid-cols-6 grid-rows-6 w-[100vw] h-[100vh]">
           <div className="col-start-1 col-end-7 row-start-1 row-end-7">
@@ -74,10 +79,18 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <div className="col-start-4 col-end-6 row-start-3 row-end-5 grid boxcent grid-row-4 h-[100%] w-[100%] ml-4">
-            <Link href="/about"><a className="items">About</a></Link>
-            <Link href="/resume"><a className="items">Resume</a></Link>
-            <Link href="/projects"><a className="items">Projects</a></Link>
-            <Link href="/portfolio"><a className="items">Portfolio</a></Link>
+            <Link href="/about">
+              <a className="items">About</a>
+            </Link>
+            <Link href="/resume">
+              <a className="items">Resume</a>
+            </Link>
+            <Link href="/projects">
+              <a className="items">Projects</a>
+            </Link>
+            <Link href="/portfolio">
+              <a className="items">Portfolio</a>
+            </Link>
           </div>
         </div>
       </main>

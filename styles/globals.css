@@ -22,7 +22,7 @@ body {
 }
 
 .homePage {
-  margin:  0;
+  margin: 0;
   height: 100%;
   overflow: hidden;
 }
@@ -97,8 +97,8 @@ a {
 }
 
 .aboutBigText {
-font-weight: 300;
-font-size: 100%;
+  font-weight: 300;
+  font-size: 100%;
 }
 
 .box {
@@ -122,19 +122,19 @@ font-size: 100%;
   overflow: hidden !important;
 }
 
-@media (min-width:610px) {
+@media (min-width: 610px) {
   .pdfViewer {
     padding-top: 20px;
     margin: 0 auto;
     width: 527px;
     height: 750px;
-  } 
+  }
 }
 
 .navItem {
-  padding: max(0.25em,1%) max(1em, 2%);
+  padding: max(0.25em, 1%) max(1em, 2%);
   margin: 0.1em;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   text-transform: capitalize;
   background-size: 0% 100%;
@@ -145,8 +145,8 @@ font-size: 100%;
 
 .navItem:hover {
   text-decoration: underline;
-  background-size: 150% 200%; 
-  background-position: 0 100%; 
+  background-size: 150% 200%;
+  background-position: 0 100%;
 }
 
 .navBar {

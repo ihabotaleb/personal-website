@@ -15,16 +15,16 @@ const Resume: NextPage = () => {
       </Head>
       <main>
         <div className="subPage">
-					<div className="flex flex-col">
-						<Header />
-						<div className="flex self-center w-[87vw] h-[80vh]">
-							<embed
-								className="pdfViewer"
-								src="/ibrahimAbotaleb_Resume.pdf"
-								type="application/pdf"
-							/>
-						</div>
-					</div>
+          <div className="flex flex-col">
+            <Header />
+            <div className="flex self-center w-[87vw] h-[80vh] pdfBox">
+              <embed
+                className="pdfViewer"
+                src="/ibrahimAbotaleb_Resume.pdf"
+                type="application/pdf"
+              />
+            </div>
+          </div>
         </div>
       </main>
     </div>

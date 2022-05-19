@@ -1,8 +1,11 @@
 from PIL import Image
 import glob
+import random
 
 # Get all image paths
 paths = glob.glob("public/imgs/*.png")
+
+random.shuffle(paths)
 
 imgPaths = "const IMAGES=["
 
