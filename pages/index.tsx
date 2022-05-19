@@ -59,8 +59,8 @@ const Home: NextPage = () => {
           href="/apple-touch-icon-144x144.png"
         />{" "}
       </Head>
-      <main className="homePage">
-        <div className="behind grid grid-cols-6 grid-rows-6 w-[100vw] h-[100vh]">
+      <main>
+        <div className="behind grid grid-cols-6 grid-rows-6 w-[100vw] h-[100vh] ">
           <div className="col-start-1 col-end-7 row-start-1 row-end-7">
             <svg
               width="100%"

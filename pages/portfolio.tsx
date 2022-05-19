@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/header";
+import Header, { Pages } from "../components/header";
 import PhotoAlbum from "react-photo-gallery";
 
 const Portfolio: NextPage = () => {
@@ -35,7 +35,7 @@ const Portfolio: NextPage = () => {
       </Head>
       <main>
         <div className="subPage">
-          <Header />
+          <Header active={Pages.PORTFOLIO} />
           <PhotoAlbum photos={IMAGES} />
         </div>
       </main>

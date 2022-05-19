@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import { useWindowSize } from "usehooks-ts";
-import Header from "../components/header";
+import Header, { Pages } from "../components/header";
 
 const Projects: NextPage = () => {
   const { width, height } = useWindowSize();
@@ -18,7 +18,7 @@ const Projects: NextPage = () => {
       </Head>
       <main>
         <div className="subPage">
-          <Header />
+          <Header active={Pages.PROJECTS} />
           <p className="italic text-center">CONTENT TO BE PUT HERE</p>
         </div>
       </main>

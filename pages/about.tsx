@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/header";
+import Header, { Pages } from "../components/header";
 
 const About: NextPage = () => {
   return (
@@ -15,7 +15,7 @@ const About: NextPage = () => {
       </Head>
       <main>
         <div className="subPage">
-          <Header />
+          <Header active={Pages.ABOUT} />
           <div className="flex flex-col">
             <p className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%]">
               {

@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/header";
+import Header, { Pages } from "../components/header";
 
 const Resume: NextPage = () => {
   return (
@@ -16,7 +16,7 @@ const Resume: NextPage = () => {
       <main>
         <div className="subPage">
           <div className="flex flex-col">
-            <Header />
+            <Header active={Pages.RESUME} />
             <div className="flex self-center w-[87vw] h-[80vh] pdfBox">
               <embed
                 className="pdfViewer"
