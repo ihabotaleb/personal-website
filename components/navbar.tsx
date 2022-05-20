@@ -28,7 +28,7 @@ const NavBar = ({ active } : NavBarPropType) => {
       <Link href="/resume">
         <a className={resumeClassName}>resume</a>
       </Link>
-      <Link href="http://github.com/ihabotaleb">
+      <Link href="/projects">
         <a className={projectsClassName}>projects</a>
       </Link>
       <Link href="/portfolio">

@@ -17,7 +17,7 @@ const Resume: NextPage = () => {
         <div className="subPage">
           <div className="flex flex-col">
             <Header active={Pages.RESUME} />
-            <div className="flex self-center w-[87vw] h-[80vh] pdfBox">
+            <div className="flex self-center w-[87vw] h-[80vh]">
               <embed
                 className="pdfViewer"
                 src="/ibrahimAbotaleb_Resume.pdf"

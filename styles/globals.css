@@ -8,9 +8,13 @@
 }
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeue-ThinItalic-14.ttf") format("truetype");
-  font-style: italic;
+  src: url("/fonts/HelveticaNeue-Thin-13.ttf") format("truetype");
   font-weight: 200;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-01.ttf") format("truetype");
+  font-weight: 400;
 }
 
 html,
@@ -31,7 +35,7 @@ a {
 }
 
 .title {
-  font-family: "Helvetica Neue", "Raleway", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 200;
   color: #000;
   font-size: 150%;
@@ -69,12 +73,6 @@ a {
   z-index: 0;
 }
 
-.moveBox {
-  position: absolute;
-  cursor: move;
-  margin: auto;
-}
-
 .headerTitle {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 100;
@@ -93,20 +91,6 @@ a {
 .aboutBigText {
   font-weight: 300;
   font-size: 100%;
-}
-
-.box {
-  border: 0.3mm solid #000;
-  background-color: #fff;
-  padding: 0.5em 1em 0.5em 1em;
-  width: 60%;
-  flex-direction: column;
-  align-items: left;
-  cursor: move;
-}
-
-.pdfBox {
-  overflow: hidden !important;
 }
 
 .pdfViewer {
@@ -149,6 +133,7 @@ a {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   text-transform: capitalize;
+  text-decoration: underline;
   background-size: 150% 200%;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -204,5 +189,30 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+}
+
+.box {
+  border: 0.3mm solid #000;
+  padding: 1em 1em 1em 1em;
+  flex-basis: 40%;
+  flex-grow: 1;
+}
+
+.projectBoxGrid {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+}
+
+@media (min-width: 900px) {
+  .projectBoxGrid {
+    flex-direction: row-reverse;
+  }
+
+  .box {
+    /* width: 50%; */
   }
 }
