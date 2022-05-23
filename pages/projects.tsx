@@ -30,7 +30,7 @@ const Projects: NextPage = () => {
             
             <ProjectBox title="TransferApp"
                         subheading="fast and efficient patient profile transfer platform"
-                        link="http://github.com/ihabotaleb/personal-website"
+                        link="https://github.com/AtticATL/triage-app-team-1311"
                         text="An end-to-end encrypted progressive web app on Next.JS to facilitate the transmission of patient
                         information between hospital institutions during the patient transfer process." />
           </div>
