@@ -25,7 +25,7 @@ const About: NextPage = () => {
                 With a versatile skill set and an insatiable curiosity, I constantly push the boundaries of what is achievable. I thrive on experimenting with the latest graphics technologies and embarking on exciting projects that fuse innovation with creativity. <br/>
               </p>
               <p>
-                My academic journey has further equipped me with a strong foundation in computer science, specializing in Intelligence and Media. I have honed my skills in areas such as data structures, algorithms, computer graphics, machine learning, information visualization, and computer vision. Currently pursuing a Master's degree in Computer Science, focusing on Computer Graphics, I am eager to explore the forefront of graphics technologies and discover groundbreaking methods to create impactful experiences.
+                My academic journey has further equipped me with a strong foundation in computer science, specializing in Intelligence and Media. I have honed my skills in areas such as data structures, algorithms, computer graphics, machine learning, information visualization, and computer vision. Currently pursuing a MSCS degree at GT, focusing on Computer Graphics, I am eager to explore the forefront of graphics technologies and discover groundbreaking methods to create impactful experiences.
               </p>
               <p>
                 Fueled by a deep sense of inquisitiveness, a creative spirit, and an innate drive to make a positive impact, I am thrilled to contribute my expertise and unique perspective to trailblazing projects.
