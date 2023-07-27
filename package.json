@@ -31,8 +31,8 @@
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "typescript": "4.6.4"
-  }, 
- "peerDependencies": {
+  },
+  "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   }

@@ -199,6 +199,19 @@ a {
   flex-grow: 1;
 }
 
+.box:hover {
+  color: rgb(146, 255, 119);
+  background-color: #000;
+}
+
+.box:hover>a {
+  color: rgb(119, 155, 255);
+}
+.box:hover>* {
+  filter: drop-shadow(0px 0px 10px rgb(212, 231, 203, 0.5));
+}
+
+
 .projectBoxGrid {
   display: flex;
   gap: 1.5em;
@@ -211,8 +224,22 @@ a {
   .projectBoxGrid {
     flex-direction: row-reverse;
   }
+}
 
-  .box {
-    /* width: 50%; */
+.aboutDescription>* {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .aboutDescription {
+    padding: 0% 25%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .aboutDescription {
+    position: relative;
+    top: 10vh;
   }
 }

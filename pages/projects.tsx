@@ -33,6 +33,11 @@ const Projects: NextPage = () => {
                         link="https://github.com/AtticATL/triage-app-team-1311"
                         text="An end-to-end encrypted progressive web app on Next.JS to facilitate the transmission of patient
                         information between hospital institutions during the patient transfer process." />
+            <ProjectBox title="WREK2.0 (inprogress)"
+                        subheading="redesigned webexperience for GT's WREK Radio"
+                        link="https://test.wrek.org"
+                        text="A SSR React website reimagining the enduring college radio station's website, conveying their 
+                        'music you don't hear on the radio' mantra through a new online presence." />
           </div>
         </div>
       </main>
@@ -52,9 +57,9 @@ type ProjectBoxProps = {
 
 const ProjectBox : FunctionComponent<ProjectBoxProps> = ( { title, subheading, text, link, className } ) => {
   return(
-    <div className={"box hover:bg-[#ffd4d6] "+className}>
+    <div className={"box "+className}>
               <h2 className="neue text-[22px] font-light">{title}</h2>
-              <h4 className="times italic text-[#2f2f2f] text-[16px]">{subheading}</h4>
+              <h4 className="times italic text-[16px]">{subheading}</h4>
               <a className="font-mono text-[11px] text-right w-[100vw]" href={link}>{link}</a>
               <p className="pt-5 text-sm neue">{text}</p>
             </div>

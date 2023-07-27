@@ -6,7 +6,7 @@ const About: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Ibrahim Abotale - About</title>
+        <title>Ibrahim Abotaleb - About</title>
         <meta
           name="description"
           content="Personal website for Ibrahim Abotaleb"
@@ -16,20 +16,21 @@ const About: NextPage = () => {
       <main>
         <div className="subPage">
           <Header active={Pages.ABOUT} />
-          <div className="flex flex-col">
-            <p className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%]">
-              {
-                `
-                I'm a passionate developer with a relentless drive to create tools that empower people to unleash their creativity. My love for media, design, and the art of making things has been a constant thread throughout my life. From early experiences scripting in the Adobe Creative Suite to exploring game engines like Unity and diving into the fascinating world of real-time rendering, I've always been captivated by how media is generated and experienced.
-
-With a diverse range of skills and a natural curiosity, I'm constantly pushing the boundaries of what's possible. I thrive on experimenting with new graphics technologies and embarking on cool projects that blend innovation with creativity.
-
-Combining my academic pursuits with a Bachelor's degree in Computer Science, with a focus on Intelligence and Media, I've gained a solid foundation in areas such as data structures, algorithms, computer graphics, machine learning, information visualization, and computer vision. Currently pursuing a Master's degree in Computer Science, with a specialization in Computer Graphics, I'm eager to explore the forefront of graphics technologies and discover new ways to create impactful experiences.
-
-Driven by a strong sense of curiosity, creativity, and an innate desire to make a difference, I'm excited to bring my skills and personality to innovative projects.
-                `
-              }
-            </p>
+          <div className="flex flex-col h-full w-full items-center justify-center">
+            <div className="neue aboutBigText mt-5 pl-[16.5%] pr-[16.5%] aboutDescription">
+              <p>
+                I am a highly motivated developer committed to crafting cutting-edge tools that empower professionals to unlock their full creative potential. Throughout my life, I have been driven by a passion for media, design, and the art of creating. Whether it was my early experiences scripting in the Adobe Creative Suite or delving into game engines like Unreal and real-time rendering, I have always been captivated by the generation and experience of media. <br/>
+              </p>
+              <p>
+                With a versatile skill set and an insatiable curiosity, I constantly push the boundaries of what is achievable. I thrive on experimenting with the latest graphics technologies and embarking on exciting projects that fuse innovation with creativity. <br/>
+              </p>
+              <p>
+                My academic journey has further equipped me with a strong foundation in computer science, specializing in Intelligence and Media. I have honed my skills in areas such as data structures, algorithms, computer graphics, machine learning, information visualization, and computer vision. Currently pursuing a Master's degree in Computer Science, focusing on Computer Graphics, I am eager to explore the forefront of graphics technologies and discover groundbreaking methods to create impactful experiences.
+              </p>
+              <p>
+                Fueled by a deep sense of inquisitiveness, a creative spirit, and an innate drive to make a positive impact, I am thrilled to contribute my expertise and unique perspective to trailblazing projects.
+              </p>
+            </div>
           </div>
         </div>
       </main>
