@@ -6,7 +6,7 @@ const Resume: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Ibrahim Abotale - Resume</title>
+        <title>Ibrahim Abotaleb - Resume</title>
         <meta
           name="description"
           content="Personal website for Ibrahim Abotaleb"

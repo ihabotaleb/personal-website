@@ -10,7 +10,7 @@ const Projects: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Ibrahim Abotale - Projects</title>
+        <title>Ibrahim Abotaleb - Projects</title>
         <meta
           name="description"
           content="Personal website for Ibrahim Abotaleb"

@@ -38,7 +38,7 @@ const Portfolio: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Ibrahim Abotale - Portfolio</title>
+        <title>Ibrahim Abotaleb - Portfolio</title>
         <meta
           name="description"
           content="Personal website for Ibrahim Abotaleb"
